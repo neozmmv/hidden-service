@@ -15,6 +15,10 @@ python -m venv env
 ```
 
 ```bash
+docker compose up -d
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
