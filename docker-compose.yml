@@ -16,4 +16,4 @@ services:
       - "9050:9050"
     volumes:
       # Persist Tor data, including the hidden service keys and hostname
-      - ./docker/tor-data:/var/lib/tor
+      - ./docker/tor-data:/var/lib/tor:Z
