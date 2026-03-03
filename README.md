@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 ```bash
-fastapi dev main.py
+fastapi dev main.py --host 0.0.0.0
 ```
 
 For mounting tor-data correctly on Linux:
