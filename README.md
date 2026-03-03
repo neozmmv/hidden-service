@@ -25,3 +25,13 @@ pip install -r requirements.txt
 ```bash
 fastapi dev main.py
 ```
+
+For mounting tor-data correctly on Linux:
+
+```bash
+sudo chown -R $(whoami):$(whoami) ./docker/tor-data
+```
+
+```bash
+sudo chmod -R 700 ./docker/tor-data/hidden_service
+```
