@@ -8,6 +8,9 @@ services:
       - |
         TORRC_APPEND=HiddenServiceDir /var/lib/tor/hidden_service/
         HiddenServicePort 80 host.docker.internal:8000
+    extra_hosts:
+      # Allow Tor to resolve host.docker.internal to the host machine's IP address
+      - "host.docker.internal:host-gateway"
     ports:
       # Expose the SOCKS proxy port (optional, for debugging or other uses)
       - "9050:9050"
