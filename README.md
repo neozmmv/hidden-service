@@ -35,3 +35,8 @@ sudo chown -R $(whoami):$(whoami) ./docker/tor-data
 ```bash
 sudo chmod -R 700 ./docker/tor-data/hidden_service
 ```
+
+To see the hostname:
+```bash
+sudo cat ./docker/tor-data/hidden_service/hostname
+```
